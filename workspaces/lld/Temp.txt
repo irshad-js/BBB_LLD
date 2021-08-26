@@ -1,0 +1,4 @@
+make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- modules -j4
+make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- uImage dtbs LOADADDR=0x80008000 -j4
+make ARCH=arm moudles_install
+scp main.ko debian@beaglebone:/home/debian/drivers/

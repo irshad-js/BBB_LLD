@@ -1,0 +1,5 @@
+menu "Irshad's custom module"
+config CUSTOM_HELLO
+	tristate "Hello world module support"
+	default n
+endmenu
